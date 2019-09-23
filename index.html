@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+        <link href="codemirror/lib/codemirror.css" rel="stylesheet"/>
+        <script src="terminal.js"></script>
+        <script src="fullscreen.js"></script>
+        <script src="file-tree.js"></script>
+        <script src="editor.js"></script>
+        <script src="codemirror/lib/codemirror.js"></script>
+        <script src="codemirror/mode/javascript/javascript.js"></script>
+    </head>
+    <body>
+        <div id="ide">
+            <div class="header">
+                <div class="right">
+                    <button title="Save"><img src="assests/save.svg" width="15" /></button>
+                    <button title="Run"><img src="assests/play.svg" width="15" /></button>
+                    <button title="Fullscreen" id='fullscreen'><img src="assests/fullscreen.svg" width="15" /></button>
+                </div>
+            </div>
+            <div class="editor">
+                <div class="tree-area" id="tree-d"></div>
+                <div class="code-area">
+                    <div class="tabs">
+                            tabs
+                    </div>
+                    <div class="code" id="code" >
+                    </div>
+                    <div class="terminal" id="terminal">
+                        <div id="history"></div>
+                        <div id='prompt'>
+                            <label class="terminal-text">username@hostname ~/home $</label><span contenteditable="true" class="terminal-input" id="terminal-input"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Ln <span id="lineNo"></span>&nbsp; Col: <span id="colNo"></span>&nbsp; HTML</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

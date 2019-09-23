@@ -1,0 +1,164 @@
+body{
+    margin: 0px;
+    background-color: #333538;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/**
+
+Header Css
+
+*/
+.header{
+    width: 100%;
+    background-color: #282c34;
+    height: 50px;
+}
+
+.header .left{
+    float: left;
+}
+
+.header .right{
+    float: right;
+}
+
+.header::after{
+    clear: both;
+}
+
+.header  button{
+    margin-top: 10px;
+    margin-right: 10px;
+    border-style: none;
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    outline: none;
+    padding: 5px;
+    color: white;
+}
+/*
+    Editor css
+*/
+.editor{
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+.tree-area{
+    width: 15%;
+    border-right: 1px #474849 solid;
+    overflow: auto;
+    background-color: #333538;
+}
+
+.code-area{
+    display: flex;
+    width: 85%;
+    position: relative;
+    flex-flow: column;
+    overflow: auto;
+}
+
+.tabs{
+    width: 100%;
+    height: 45px;
+    background-color: #333538;
+    border-bottom: 1px #474849 solid;
+    overflow: auto;
+}
+
+.CodeMirror{
+    height: 100% !important;
+}
+.code{
+    height: calc(100% - 210px)
+}
+
+.terminal{
+    position: absolute;
+    height: 150px;
+    bottom: 10px;
+    width: 100%;
+    border-top: 1px #474849 solid;
+    background-color: #333538;
+    overflow: auto;
+}
+
+.footer{
+    position: absolute;
+    height: 25px;
+    bottom: 0px;
+    padding-top: 5px;
+    text-align: right;
+    background-color: dodgerblue;
+    width: 100%;
+}
+
+.footer span{
+    margin-right: 20px;
+}
+
+#history{
+    max-height: 100px;
+    overflow: auto;
+}
+
+
+.terminal-text{
+    color: #90ee90;
+    font-weight: bold;
+}
+
+.terminal-input{
+    color: white;
+    outline: none;
+    text-align: justify;
+    padding-left: 5px;
+}
+
+.file-structure{
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 10px !important;
+    margin-left: 10px !important;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  .caret::before {
+    /* content: "\25B6"; */
+    content: "\2335 ";
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari */'
+    transform: rotate(270deg); 
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari */'
+    transform: rotate(360deg);  
+  }
+  
+  .nested {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
